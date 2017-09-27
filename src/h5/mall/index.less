@@ -1,0 +1,156 @@
+html,body{
+  font-size: 12px;
+  height: 100%;
+  background: #ebecf0;
+}
+header{
+  height:80px;
+  background:white
+}
+.content{
+  position: relative;
+  width: 1200px;
+  margin: 20px auto;
+  a{
+    color:white;
+  }
+ }
+.left-menu{
+  width:170px;
+  padding:1px 0 0 20px;
+  color:white;
+  background: #3a3e4a;
+  border-right: 1px solid #a5a6aa;
+  p{
+    width: 150px;
+    margin: 15px 0;
+    cursor: pointer;
+    i{
+      float:right;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+  }
+  .title{
+    border-top:2px solid #363a39;
+    width:150px;
+    height:18px;
+    line-height: 18px;
+    padding: 16px 0;
+    color:gray;
+    i{
+      color:white;
+      font-size: 16px;
+      padding-right: 12px;
+    }
+
+  }
+  .menu>a{
+    width:93px;
+    display: inline-block;
+    margin: 10px 0;
+    &:nth-child(2n){
+      width:76px;
+
+    }
+  }
+  .search{
+    height:40px;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    input{
+      height:25px;
+      width:180px;
+      margin:5px;
+      border:1px solid #aaaaaa;
+      border-radius: 2px;
+      color:gray;
+      text-align: center;
+    }
+  }
+}
+.right-content{
+  padding:0 10px;
+  position: absolute;
+  left:200px;
+  top:0;
+}
+.content-menu{
+  height:30px;
+  padding: 12px 0 9px 0;
+  .src{
+    color:#aaaaaa;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+  }
+  .btn{
+    padding:0 12px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid #aaaaaa;
+    float:right;
+    margin-left: 5px;
+    border-radius: 2px;
+  }
+  .upload{
+    background: #fec315;
+    color:#bd4a1d;
+    border-color:#f8ba01;
+    width: 85px;
+    position: relative;
+  }
+  #myfile{
+    position: absolute;
+    top:0;
+    left:0;
+    width:110px;
+    height:30px;
+    cursor:pointer;
+    opacity: 0;
+  }
+}
+.pic-state{
+  height:40px;
+  background-color: #f6feef;
+  border-top:1px solid #b1e591;
+  border-bottom:1px solid #b1e591;
+}
+.pic-content{
+  background: #f0f0f0;
+  padding:12px 7px;
+  .pic-module{
+    width:160px;
+    height:200px;
+    margin: 0 24px 24px 0;
+    background: white;
+    position: relative;
+    float: left;
+    img{
+      width: 70%;
+      margin-left: 15%;
+    }
+    .name{
+      height:40px;
+      line-height:40px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .copy-src{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:160px;
+      line-height:160px;
+      background: rgba(0,0,0,.7);
+      text-align: center;
+      display: none;
+      color:white;
+      cursor: pointer;
+    }
+    &:hover .copy-src{display: block}
+
+  }
+}

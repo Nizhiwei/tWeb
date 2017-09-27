@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="vueCon">
+    <header>
+        <p>demo</p>
+        <div>登录</div>
+    </header>
+    <div class="content">
+        <div class="left-menu">
+            <p><a target="_blank" :href="fist">推广渠道管理<i class="fa fa-angle-right"></i></a></p>
+            <p>我购买的服务<i class="fa fa-angle-right"></i></p>
+            <p>我的快捷菜单<i class="fa fa-angle-right"></i></p>
+            <div class="title"><i class="fa fa-line-chart"></i>营销中心</div>
+            <div class="menu"><a target="_blank" v-for="data of ying" :href="data.url">{{data.name}}</a></div>
+            <div class="title"><i class="fa fa-institution"></i>店铺管理</div>
+            <div class="menu"><a target="_blank" v-for="data of dian" :href="data.url">{{data.name}}</a></div>
+            <div class="title"><i class="fa fa-truck"></i>物流管理</div>
+            <div class="menu"><a target="_blank" v-for="data of wu" :href="data.url">{{data.name}}</a></div>
+            <div class="title"><i class="fa fa-cny"></i>交易管理</div>
+            <div class="menu"> <a target="_blank" v-for="data of jiao" :href="data.url">{{data.name}}</a></div>
+            <div class="title"><i class="fa fa-gift"></i>宝贝管理</div>
+            <div class="menu"><a target="_blank" v-for="data of bao" :href="data.url">{{data.name}}</a></div>
+            <div class="title"><i class="fa fa-institution"></i>货源中心</div>
+            <div class="menu"><a target="_blank" v-for="data of huo" :href="data.url">{{data.name}}</a></div>
+            <div class="title"><i class="fa fa-tv"></i>软件服务</div>
+            <div class="menu"> <a target="_blank" v-for="data of ruan" :href="data.url">{{data.name}}</a></div>
+            <div class="title"><i class="fa fa-user-o"></i>客户服务</div>
+            <div class="menu"><a target="_blank" v-for="data of ke" :href="data.url">{{data.name}}</a></div>
+            <!--<div class="title"><i class="fa fa-link"></i>友情链接</div>-->
+            <!--<div class="menu"> <a target="_blank" v-for="data of you" :href="data.url">{{data.name}}</a></div>-->
+            <div class="title"><i class="fa fa-thumbs-o-up"></i>特色服务</div>
+            <div class="menu"> <a target="_blank" v-for="data of te" :href="data.url">{{data.name}}</a></div>
+        </div>
+        <div class="right-content">
+            <img src="../../picSpace/picIndex/index.png">
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

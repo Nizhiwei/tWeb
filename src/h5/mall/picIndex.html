@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="picIndex.css">
+
+</head>
+<body ondragstart="return false;">
+<div id="vueCon">
+    <img style="width:1920px" :src="img" />
+    <a v-if="type==4" target="_blank" :href="url('4-1')" class="type4"></a>
+    <div v-if="type==5">
+        <a :href="url('5-1')" target="_blank" class="type5"></a>
+        <a :href="url('5-2')" target="_blank" class="type5" style="top:600px"></a>
+        <a :href="url('5-3')" target="_blank" class="type5" style="top:600px;left:855px"></a>
+        <a :href="url('5-4')" target="_blank" class="type5" style="top:866px"></a>
+        <a :href="url('5-5')" target="_blank" class="type5" style="top:866px;left:855px"></a>
+        <a :href="url('5-6')" target="_blank" class="type5" style="top:866px;left:1100px"></a>
+    </div>
+</div>
+</body>
+<script src="picIndex.js"></script>
+</html>

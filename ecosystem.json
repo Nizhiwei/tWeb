@@ -1,0 +1,7 @@
+{
+  "apps" : [{
+    "name"        : "t-web",
+    "script"      : "bin/www",
+    "watch"       : true
+  }]
+}

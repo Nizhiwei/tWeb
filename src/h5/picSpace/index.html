@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="pic.css">
+</head>
+<body>
+<div id="vueCon">
+    <header>
+        <p style="width: 202px;font-size: 24px;font-weight: 600">图片空间</p>
+        <p style="background:#80b8f5 ">首页</p>
+        <p>百宝箱 <i class="fa fa-angle-down"></i></p>
+        <p>授权管理</p>
+        <p>图片美化</p>
+    </header>
+    <div style="position: relative">
+        <div class="left-menu">
+            <p>图片目录</p>
+            <div class="search">
+                <input type="text" placeholder="按文件夹名称实时搜索" />
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="content-menu">
+                <div class="src"><i class="fa fa-file-picture-o"></i>  我的图片</div>
+                <div class="btn"><i class="fa fa-trash-o"></i>  回收站</div>
+                <div class="btn"><i class="fa fa-folder-open-o"></i>  新建文件夹</div>
+                <div class="upload btn">
+                    <input type="file" name="myfile" id="myfile" onchange="uploadFile()"/>
+                    <i class="fa fa-upload"></i>  上传图片</div>
+            </div>
+            <div class="pic-state"></div>
+            <div class="pic-content clearfix">
+                <div class="pic-module" v-for="item in content">
+                    <div style="width:160px;height:160px">
+                        <img :src="'../../picSpace/'+item" />
+                    </div>
+                    <div class="name">{{item}}</div>
+                    <div class="copy-src" :data-clipboard-text="imgSrc1+item+imgSrc2">
+                        <i class="fa fa-copy fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../common/js/clipboard.min.js"></script>
+<script src="pic.js"></script>
+</html>
